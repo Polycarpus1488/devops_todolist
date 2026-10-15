@@ -1,10 +1,9 @@
 Link to Docker Hub todoapp repository https://hub.docker.com/repository/docker/vasylsmol88/todoapp/general
 
 How to build and run the todoapp:
-1. Run command: docker build -t todoapp:tag .
+1. Run command: docker build -t todoapp:1.0.0 .
 2. Check that image was created, run: docker images
-3. Run docker command: docker run -d --name todoapp -e PYTHONUNBUFFERED=1 -p 8080:8080 \
-    0.0.0.0:8080
+3. Run docker command: docker run -d --name todoapp -p 8080:8080 todoapp:1.0.0
 4. Verify that docker container was started and run command: docker ps
 
 How to access aplication using browser:
